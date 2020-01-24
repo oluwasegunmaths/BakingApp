@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tablet_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <fragment
+        android:id="@+id/master_list_fragment"
+
+        android:name="com.ease.bakingapp.StepListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="0.5" />
+
+    <fragment
+        android:id="@+id/step_detail_fragment"
+        android:name="com.ease.bakingapp.StepDetailFragment"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5" />
+</LinearLayout>
